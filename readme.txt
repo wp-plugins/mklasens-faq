@@ -34,3 +34,11 @@ Ask one via the support forums, send an e-mail.. You'll find your way.. :-)
 
 == Changelog ==
 - First Release
+
+
+== Screenshots ==
+
+1. Front-End view of mklasen's FAQ.
+2. WYSIWYG Editor view
+3. Media button to add FAQ's that are in categories.
+4. Overview of FAQ's
