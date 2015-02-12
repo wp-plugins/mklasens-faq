@@ -1,0 +1,52 @@
+.mklasens-faq {
+	
+}
+
+.mklasens-faq .question {
+	margin-bottom: 15px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+
+.mklasens-faq .question .icon {
+	background-image: url(../images/faq-icon.png);
+	background-position: top;
+	background-repeat: none;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.mklasens-faq .question.active .icon {
+	background-position: bottom;
+}
+
+.mklasens-faq .answer {
+	padding: 15px;
+	background: #f2f2f2;
+	display: none;
+	margin-bottom: 25px;
+}
+
+.mklasens-faq .answer.active {
+	display: block;
+}
+
+.mklasens-faq .title-parent{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.mklasens-faq .parent-posts .title-parent {
+	padding: 10px;
+	background: #D8D8D8;
+	margin-bottom: 0;
+}
+
+
+.mklasens-faq .parent-posts .description-parent {
+	padding: 10px;
+	background: #D8D8D8;
+}
