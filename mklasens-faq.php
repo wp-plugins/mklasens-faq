@@ -130,7 +130,6 @@ defined( 'ABSPATH' ) or die( 'You can\'t access this file directly!');
 		$posts = get_posts($args);
 		$output = '';
 		$output .= '<div class="mklasens-faq">';
-		$output .= '<div class="faq-search"><input type="text" /></div>';
 			
 		foreach($posts as $post) {
 			$children = get_children(array(
