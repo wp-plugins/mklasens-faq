@@ -130,6 +130,8 @@ defined( 'ABSPATH' ) or die( 'You can\'t access this file directly!');
 		$posts = get_posts($args);
 		$output = '';
 		$output .= '<div class="mklasens-faq">';
+		$output .= '<div class="faq-search"><input type="text" /></div>';
+			
 		foreach($posts as $post) {
 			$children = get_children(array(
 				'order' => 'ASC',
@@ -198,19 +200,20 @@ defined( 'ABSPATH' ) or die( 'You can\'t access this file directly!');
 		$cats = get_categories('taxonomy=faq-category');
 		
 		echo '<div class="mklasens_select_faq" id="mklasens_select_faq" style="display: none;">';
-			if ($cats) {
-				echo '<h1>Which FAQ\'s would you like to show?</h1>';
-				echo '<select class="select_faq_category">';
-					echo '<option value="">Show all FAQ\'s...</option>';
-				foreach ($cats as $cat) {
-					echo '<option value="'.$cat->name.'">'.$cat->name.'</option>';
-				}
-				echo '</select>';
-				submit_button('Add FAQ', '', 'mklasen_submit_add_faq');
-				
-			} else {
-				echo '<p>No FAQ categories yet. You should <a href="edit-tags.php?taxonomy=faq-category&post_type=faq">make one</a>.';
+			echo '<h1>Which FAQ\'s would you like to show?</h1>';
+			if (!$cats) {
+				echo '<p>No FAQ categories yet. Show all faq\'s or <a href="edit-tags.php?taxonomy=faq-category&post_type=faq">make one</a></p>.';
 			}
+			echo '<select class="select_faq_category">';
+				echo '<option value="">Show all FAQ\'s...</option>';
+				if ($cats) {			
+					foreach ($cats as $cat) {
+						echo '<option value="'.$cat->name.'">'.$cat->name.'</option>';
+					}
+					
+				}
+			echo '</select>';
+			submit_button('Add FAQ', '', 'mklasen_submit_add_faq');
 		echo '</div>';
 	}
 	
