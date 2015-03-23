@@ -67,7 +67,7 @@ defined( 'ABSPATH' ) or die( 'You can\'t access this file directly!');
 			'has_archive'        => true,
 			'hierarchical'       => false,
 			'menu_position'      => 6,
-			'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'revisions' ),
+			'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'revisions', 'page-attributes' ),
 			'menu_icon'			 => 'dashicons-editor-ul' 
 		);
 	
