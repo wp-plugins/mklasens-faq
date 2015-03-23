@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die( 'You can\'t access this file directly!');
  * Plugin Name: mklasen's FAQ
  * Plugin URI: http://plugins.mklasen.com/faq/
  * Description: Add easy Frequently Asked Questions to your WordPress website. Answers are shown (slide-down) after a visitor clicks on a question.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Marinus Klasen
  * Author URI: http://mklasen.com
  * License: GPLv2 or later
@@ -65,7 +65,7 @@ defined( 'ABSPATH' ) or die( 'You can\'t access this file directly!');
 			'rewrite'            => array( 'slug' => 'faq' ),
 			'capability_type'    => 'post',
 			'has_archive'        => true,
-			'hierarchical'       => false,
+			'hierarchical'       => true,
 			'menu_position'      => 6,
 			'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'revisions', 'page-attributes' ),
 			'menu_icon'			 => 'dashicons-editor-ul' 

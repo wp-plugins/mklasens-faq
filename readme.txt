@@ -33,6 +33,7 @@ No Questions yet!
 Ask one via the support forums, send an e-mail.. You'll find your way.. :-)
 
 == Changelog ==
+- 32-03-15: Added support for page-attributes and set hierarchal to true for the used custom post type faq.
 - First Release
 
 
