@@ -240,7 +240,7 @@ defined( 'ABSPATH' ) or die( 'You can\'t access this file directly!');
 	
 	function mklasens_faq_media_button() {
 		$screen = get_current_screen();
-		if ($screen->parent_base != 'edit')
+		if (isset($screen->parent_base) && $screen->parent_base != 'edit')
 			return;
 			
 		        // do a version check for the new 3.5 UI
